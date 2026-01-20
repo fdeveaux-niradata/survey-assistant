@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Assistant | Nira Data</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo-container">
+        <img src="nira_data_logo_circle.png" alt="Nira Data" class="logo">
+        <span class="logo-text">Nira Data</span>
+      </div>
+      <div class="header-actions">
+        <div class="export-dropdown">
+          <button id="exportBtn" class="header-btn" title="Export">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7,10 12,15 17,10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+          </button>
+          <div class="dropdown-menu" id="exportMenu">
+            <button id="exportSummaryWord">Summary (Word)</button>
+            <button id="exportSummaryPdf">Summary (PDF)</button>
+            <div class="dropdown-divider"></div>
+            <button id="exportTranscriptWord">Full Transcript (Word)</button>
+            <button id="exportTranscriptPdf">Full Transcript (PDF)</button>
+          </div>
+        </div>
+        <button id="homeBtn" class="header-btn home-btn" title="Back to Home">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          <span>Home</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Chat Container -->
+    <main class="chat-container" id="chatContainer">
+      <div class="welcome-message">
+        <img src="nira_data_logo_circle.png" alt="Nira Data" class="welcome-logo">
+        <h1>Welcome to Survey Assistant</h1>
+        <p>I help you craft survey questions that are clear, concise, and unbiased, ready to use on Nira Data's platform.</p>
+        <div class="starter-prompts">
+          <button class="starter-btn" data-prompt="I'd like to start with a research question. But first, can you explain what a research question is, how it's different from a survey question, and why it's important to start with this?">
+            Start with a research question (Recommended)
+          </button>
+          <button class="starter-btn" data-prompt="I have a draft survey question I'd like you to review.">
+            Review my draft survey question
+          </button>
+          <button class="starter-btn" data-prompt="What are Nira Data's survey question requirements?">
+            Learn about requirements
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Input Area -->
+    <footer class="input-area">
+      <div class="input-container">
+        <textarea
+          id="messageInput"
+          placeholder="Type your message..."
+          rows="1"
+        ></textarea>
+        <button id="sendBtn" class="send-btn" disabled>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22,2 15,22 11,13 2,9"></polygon>
+          </svg>
+        </button>
+      </div>
+      <p class="disclaimer">Survey Assistant provides guidance only. Always verify questions with human review.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
