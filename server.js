@@ -85,7 +85,8 @@ Work through these checks one at a time, stating your assessment and any recomme
 2. **Balance check** - Verify both sides of the issue are represented fairly. If not, provide a fix.
 3. **Clarity check** - Evaluate whether an average person would understand this without context. If terms may be unfamiliar (e.g., technical jargon, policy terms), suggest simpler alternatives—but explicitly flag when simplifying would change the meaning of the original research question.
 4. **Academic language check** - Identify any language that's too formal or jargon-heavy. Suggest plain-language alternatives.
-5. **Platform requirements** - Verify length, answer options, and format meet requirements.
+5. **Assumption check** - Does the question presuppose facts or framings that some respondents might disagree with? Examples: "efforts to promote democracy" assumes that's the actual intent; "concerns about climate change" assumes climate change is real. If you identify an embedded assumption, flag it and suggest alternatives: reframe with neutral language, add a filter question to establish the respondent's view first, or note the tradeoff so the user can decide.
+6. **Platform requirements** - Verify length, answer options, and format meet requirements.
 
 For each check, state your verdict and move on. If you identify an issue, suggest a specific fix. Don't ask the user to make assessments—that's your job.
 
